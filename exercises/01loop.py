@@ -13,3 +13,13 @@
 # > Hello there
 # > Hello there
 # > Hello there
+
+i = 0
+
+def p_times(statement, num):
+    global i
+    while i < num:
+        print(statement)
+        i += 1
+
+p_times('Hello', 3)
