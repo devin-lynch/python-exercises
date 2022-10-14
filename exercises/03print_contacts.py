@@ -23,6 +23,15 @@ contacts = {
 
 
 
-for key in contacts:
-  print(f'{key}: {contacts[key]}')
+# for key in contacts:
+#   print(f'{key}: {contacts[key]}')
 
+
+# CLASS REVIEW
+
+def print_contacts(contacts):
+  # loop over contacts dictionary
+  for name in contacts:
+    print(f'{name} has a phone number of {contacts[name]}')
+
+print_contacts(contacts)

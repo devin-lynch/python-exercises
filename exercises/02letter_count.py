@@ -27,21 +27,36 @@
 #
 # > {'a': 3, 'b': 1, 'n': 2}
 
-dd = {}
+# dd = {}
 
-def letter_count(word):
-    global dd
-    for letter in word:
-        if letter in dd:
-            dd[letter] += 1
+# def letter_count(word):
+#     global dd
+#     for letter in word:
+#         if letter in dd:
+#             dd[letter] += 1
+#         else:
+#             dd[letter] = 1
+
+# letter_count('banana')
+
+# print(dd)
+
+
+# CLASS REVIEW
+
+def letter_count(string):
+    dd = {}
+    # loop over string
+    for char in string:
+        # if the char is in our dictionary, we want to increment that value
+        if char in dd:
+            dd[char] += 1
+        # if the char is not in our dictionary, we want to add it to the dictionary with a value of 1
         else:
-            dd[letter] = 1
+            dd[char] = 1
 
-letter_count('banana')
+    return dd
 
-print(dd)
+print(letter_count('banana'))
 
 
-
-# for letter in 'alpha':
-#     print(letter)

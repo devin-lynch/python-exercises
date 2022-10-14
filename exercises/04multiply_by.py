@@ -11,17 +11,34 @@
 #
 # > [5, 10, 15]
 
-number_list = [1, 2, 3]
-new_list2 = []
+# number_list = [1, 2, 3]
+# new_list2 = []
 
-def multiply_by(num_list, num):
-    for number in num_list:
-        number *= num
+# def multiply_by(num_list, num):
+#     for number in num_list:
+#         number *= num
 
-multiply_by(number_list, 5)
+# multiply_by(number_list, 5)
 
-new_list = [5*i for i in number_list]
-print(new_list)
+# new_list = [5*i for i in number_list]
+# print(new_list)
 
 
+# CLASS REVIEW
+
+
+
+def multiply_by(li, num):
+    # # iterate the list in a way that allows us to mutate the list
+    ## enumerate
+    # for i, list_num in enumerate(li):
+    #     li[i] = list_num * num
+
+    # range
+    for i in range(len(li)):
+        li[i] *= num
+
+    return li
+
+print(multiply_by([1, 2, 3], 5))
 

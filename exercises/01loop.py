@@ -14,12 +14,29 @@
 # > Hello there
 # > Hello there
 
-i = 0
+# i = 0
 
-def p_times(statement, num):
-    global i
-    while i < num:
+# def p_times(statement, num):
+#     global i
+#     while i < num:
+#         print(statement)
+#         i += 1
+
+# p_times('Hello', 3)
+
+
+# CLASS REVIEW
+
+def p_times(statement, nums):
+    # # using a for loop...
+    # for i in range(nums):
+    #     print(statement)
+
+    # using a while loop
+    i = 0
+    while i < nums:
         print(statement)
         i += 1
 
-p_times('Hello', 3)
+# p_times('Hello there', 1)
+p_times('Hello there', 4)
