@@ -12,6 +12,7 @@
 # > [5, 10, 15]
 
 number_list = [1, 2, 3]
+new_list2 = []
 
 def multiply_by(num_list, num):
     for number in num_list:
@@ -21,4 +22,6 @@ multiply_by(number_list, 5)
 
 new_list = [5*i for i in number_list]
 print(new_list)
+
+
 

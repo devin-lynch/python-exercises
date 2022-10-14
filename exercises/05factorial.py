@@ -9,3 +9,15 @@
 #
 # > 120
 #
+
+
+def factorial(n):
+    whole_number = 1
+    i = 0
+    while i < n:
+        i += 1
+        whole_number *= i
+    print(whole_number)
+
+factorial(5)
+
