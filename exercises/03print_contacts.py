@@ -26,4 +26,3 @@ contacts = {
 for key in contacts:
   print(f'{key}: {contacts[key]}')
 
-print(contacts)
